@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+   name: spring-boot-demo
+spec:
+  rules:
+  - host:  spring-boot-demo-dc2-tools.isdc20-0ce42e8480356580312b8efcc5f21aad-0001.us-south.containers.appdomain.cloud
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: spring-boot-demo
+          servicePort: 8080
