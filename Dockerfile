@@ -1,4 +1,4 @@
-FROM java:8-jdk
+FROM registry.redhat.io/openjdk/openjdk-11-rhel7
 RUN addgroup -S 1001 && adduser -S 1001 -G 1001
 USER 1001:1001
 COPY ./target/demo-0.0.1-SNAPSHOT.jar /app/
