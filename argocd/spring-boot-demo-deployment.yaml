@@ -14,7 +14,7 @@ spec:
         app: spring-boot-demo
     spec:
       containers:
-      - image: ramyvaid/spring-boot-demo:2.0
+31
         name: spring-boot-demo
         ports:
         - containerPort: 8080
